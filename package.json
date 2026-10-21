@@ -1,0 +1,16 @@
+{
+  "name": "ultron-ai",
+  "version": "1.0.0",
+  "description": "Your own AI chat website with two brains: Claude API (A) or open-source Ollama model (B)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:claude": "BRAIN=claude node server.js",
+    "start:ollama": "BRAIN=ollama node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
